@@ -4,7 +4,8 @@
  * @param {number}
  * @returns {number[]}
  */
-function oneTillDoneWhileLoop(num) {
+
+const oneTillDoneWhileLoop = num => {
   const arr = [];
   let i = 1;
   while (i <= num) {
@@ -20,7 +21,8 @@ function oneTillDoneWhileLoop(num) {
  * @param {number}
  * @returns {number[]}
  */
-function oneTillDoneForLoop(num) {
+
+const oneTillDoneForLoop = num =>{
   const arr = [];
   for (let i = 1; i <= num; i++) {
     arr.push(i)
@@ -34,7 +36,8 @@ function oneTillDoneForLoop(num) {
  * @param {number}
  * @returns {number[]}
  */
-function doneToZeroWhileLoop(num) {
+
+const doneToZeroWhileLoop = num => {
   const arr = [];
   let i = num;
   while (i > 0) {
@@ -50,7 +53,8 @@ function doneToZeroWhileLoop(num) {
  * @param {number}
  * @returns {number[]}
  */
-function doneToZeroForLoop(num) {
+
+const doneToZeroForLoop = num => {
   let arr = [];
   for (let i = num; i > 0; i--) {
     arr.push(i);
@@ -67,7 +71,8 @@ function doneToZeroForLoop(num) {
  * @param {number} max number
  * @returns {string[]} ["0 is even", "1 is odd", "2 is even", "3 is odd"] if max was 3
  */
-function evenAndOddWhileLoop(max) {
+
+const evenAndOddWhileLoop = max => {
   let arr = [];
   let i = 0;
   while (i <= max) {
@@ -90,7 +95,14 @@ function evenAndOddWhileLoop(max) {
  * @param {number} max number
  * @returns {string[]} ["0 is even", "1 is odd", "2 is even", "3 is odd"] if max was 3
  */
-function evenAndOddForLoop() {}
+
+const evenAndOddForLoop = max => {
+  const arr = [];
+  for (let i = 0; i <= max; i++) {
+    i % 2 === 0 ? arr.push(`${i} is even`) : arr.push(`${i} is odd`)
+  }
+  return arr
+}
 
 /**
  * Takes in the variable "x", and iterates over all numbers from 0 to "x".
@@ -106,7 +118,7 @@ function evenAndOddForLoop() {}
 * 4 * 9 = 36
 * 5 * 9 = 45
  */
-function tillXTimes9WhileLoop() {}
+const tillXTimes9WhileLoop = () => {}
 
 /**
  * Takes in the variable "x", and iterates over all numbers from 0 to "x".
@@ -122,7 +134,7 @@ function tillXTimes9WhileLoop() {}
 * 4 * 9 = 36
 * 5 * 9 = 45
  */
-function tillXTimes9ForLoop() {}
+const tillXTimes9ForLoop = () => {}
 
 
 /**
@@ -131,7 +143,7 @@ function tillXTimes9ForLoop() {}
  * @returns {number[]} [5, 15, 25, ..., 95]
 
  */
-function endsWithFiveWhileLoop() {}
+const endsWithFiveWhileLoop = () => {}
 
 
 
@@ -141,7 +153,7 @@ function endsWithFiveWhileLoop() {}
  * @returns {number[]} [5, 15, 25, ..., 95]
 
  */
-function endsWithFiveForLoop() {}
+const endsWithFiveForLoop = () => {}
 // Try refactoring the code above to increment your i by 10 and starting at 5.
 
 
@@ -171,7 +183,7 @@ while (i > 3) {
  * @returns {Array} [1, 2, "Fizz", 4, "Buzz"... 98, "Fizz", "Buzz"]
 
  */
-function fizzBuzzPart1() {}
+const fizzBuzzPart1 = () => {}
 
 
  /**
@@ -183,7 +195,7 @@ function fizzBuzzPart1() {}
  * @returns {Array}
 
  */
-function fizzBuzzPart2() {}
+const fizzBuzzPart2 = () => {}
 
 /**
  * Takes in range (inclusive) and returns the sum of all numbers in that range.
@@ -192,7 +204,7 @@ function fizzBuzzPart2() {}
  * @param {number} max number
  * @returns {number} sum all all numbers from min to max
  */
-function rangeSum() {}
+const rangeSum = () => {}
 
 /**
  * Takes in range (inclusive) and returns an array in decreasing order of all odd numbers
@@ -202,7 +214,7 @@ function rangeSum() {}
  * @param {number} max number
  * @returns {number[]} all odd numbers in range decreasing
  */
-function rangeOdd() {}
+const rangeOdd = () => {}
 
 /**
  * Takes in range (inclusive) and returns an array in increasing order of every other element.
@@ -212,7 +224,7 @@ function rangeOdd() {}
  * @param {number} max number
  * @returns {number[]} includes every other element
  */
-function rangeEveryOther() {}
+const rangeEveryOther = () => {}
 
 /**
  * Takes in an array and a target.
@@ -223,7 +235,7 @@ function rangeEveryOther() {}
  * @param {number|string} target
  * @returns {boolean} true if the array contains our target, otherwise false
  */
-function containsWhileLoop() {}
+const containsWhileLoop = () => {}
 
 /**
  * Takes in an array and a target.
@@ -234,7 +246,7 @@ function containsWhileLoop() {}
  * @param {number|string} target
  * @returns {boolean} true if the array contains our target, otherwise false
  */
-function containsForLoop() {}
+const containsForLoop = () => {}
 /**
  * Takes in an array and a target.
  * Determines how many times the target exists in the array
@@ -242,7 +254,7 @@ function containsForLoop() {}
  * @param {number|string} target
  * @returns {number} number of occurances
  */
-function targetCount() {}
+const targetCount = () => {}
 /**
  * Takes in an array and a target.
  * Determines the first index that the target is found at.
@@ -252,7 +264,7 @@ function targetCount() {}
  * @param {number|string} target
  * @returns {number} first index found.
  */
-function firstIndexFound() {}
+const firstIndexFound = () => {}
 /**
  * Takes in an array and a target.
  * Determines the last index that the target is found at.
@@ -262,7 +274,7 @@ function firstIndexFound() {}
  * @param {number|string} target
  * @returns {number} last index found.
  */
-function lastIndexFound() {}
+const lastIndexFound = () => {}
 
 /**
  * Takes in an array.
@@ -271,7 +283,7 @@ function lastIndexFound() {}
  * @param {number[]} elements
  * @returns {number[]}
  */
-function timesIndex() {}
+const timesIndex = () => {}
 
 
 /**
@@ -283,7 +295,7 @@ function timesIndex() {}
  * @param {number[]} elements
  * @returns {number[]}
  */
-function cumulativeSum() {}
+const cumulativeSum = () => {}
 
 
 
