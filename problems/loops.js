@@ -70,7 +70,7 @@ function doneToZeroForLoop(num) {
 function evenAndOddWhileLoop(max) {
   let arr = [];
   let i = 0;
-  while (i < max) {
+  while (i <= max) {
     if (i % 2 === 0) {
       arr.push(`${i} is even`)
     } else {
@@ -78,6 +78,7 @@ function evenAndOddWhileLoop(max) {
     }
     i++
   }
+  return arr
 }
 
 /**
