@@ -72,6 +72,7 @@ const doneToZeroForLoop = num => {
  * @returns {string[]} ["0 is even", "1 is odd", "2 is even", "3 is odd"] if max was 3
  */
 
+ // unable to write in ternary
 const evenAndOddWhileLoop = max => {
   let arr = [];
   let i = 0;
@@ -118,7 +119,15 @@ const evenAndOddForLoop = max => {
 * 4 * 9 = 36
 * 5 * 9 = 45
  */
-const tillXTimes9WhileLoop = () => {}
+const tillXTimes9WhileLoop = x => {
+  const arr = [];
+  let i = 0;
+  while (i <= x) {
+    arr.push(i * 9)
+    i++
+  }
+  return arr
+}
 
 /**
  * Takes in the variable "x", and iterates over all numbers from 0 to "x".
@@ -134,7 +143,13 @@ const tillXTimes9WhileLoop = () => {}
 * 4 * 9 = 36
 * 5 * 9 = 45
  */
-const tillXTimes9ForLoop = () => {}
+const tillXTimes9ForLoop = (x) => {
+  const arr = [];
+  for (let i = 0; i<= x; i++) {
+    arr.push(i * 9)
+  }
+  return arr
+}
 
 
 /**
