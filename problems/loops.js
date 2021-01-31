@@ -119,6 +119,7 @@ const evenAndOddForLoop = max => {
 * 4 * 9 = 36
 * 5 * 9 = 45
  */
+
 const tillXTimes9WhileLoop = x => {
   const arr = [];
   let i = 0;
@@ -143,6 +144,7 @@ const tillXTimes9WhileLoop = x => {
 * 4 * 9 = 36
 * 5 * 9 = 45
  */
+
 const tillXTimes9ForLoop = (x) => {
   const arr = [];
   for (let i = 0; i<= x; i++) {
@@ -158,7 +160,18 @@ const tillXTimes9ForLoop = (x) => {
  * @returns {number[]} [5, 15, 25, ..., 95]
 
  */
-const endsWithFiveWhileLoop = () => {}
+
+const endsWithFiveWhileLoop = () => {
+  const arr = [];
+  let i = 1;
+  while (i <= 100) {
+    if (i % 10 === 5) {
+      arr.push(i)
+    }
+    i++
+  }
+  return arr
+}
 
 
 
@@ -168,6 +181,7 @@ const endsWithFiveWhileLoop = () => {}
  * @returns {number[]} [5, 15, 25, ..., 95]
 
  */
+
 const endsWithFiveForLoop = () => {}
 // Try refactoring the code above to increment your i by 10 and starting at 5.
 
@@ -198,6 +212,7 @@ while (i > 3) {
  * @returns {Array} [1, 2, "Fizz", 4, "Buzz"... 98, "Fizz", "Buzz"]
 
  */
+
 const fizzBuzzPart1 = () => {}
 
 
@@ -210,6 +225,7 @@ const fizzBuzzPart1 = () => {}
  * @returns {Array}
 
  */
+
 const fizzBuzzPart2 = () => {}
 
 /**
@@ -219,6 +235,7 @@ const fizzBuzzPart2 = () => {}
  * @param {number} max number
  * @returns {number} sum all all numbers from min to max
  */
+
 const rangeSum = () => {}
 
 /**
@@ -229,6 +246,7 @@ const rangeSum = () => {}
  * @param {number} max number
  * @returns {number[]} all odd numbers in range decreasing
  */
+
 const rangeOdd = () => {}
 
 /**
@@ -239,6 +257,7 @@ const rangeOdd = () => {}
  * @param {number} max number
  * @returns {number[]} includes every other element
  */
+
 const rangeEveryOther = () => {}
 
 /**
@@ -250,6 +269,7 @@ const rangeEveryOther = () => {}
  * @param {number|string} target
  * @returns {boolean} true if the array contains our target, otherwise false
  */
+
 const containsWhileLoop = () => {}
 
 /**
@@ -261,6 +281,7 @@ const containsWhileLoop = () => {}
  * @param {number|string} target
  * @returns {boolean} true if the array contains our target, otherwise false
  */
+
 const containsForLoop = () => {}
 /**
  * Takes in an array and a target.
@@ -269,6 +290,7 @@ const containsForLoop = () => {}
  * @param {number|string} target
  * @returns {number} number of occurances
  */
+
 const targetCount = () => {}
 /**
  * Takes in an array and a target.
@@ -279,6 +301,7 @@ const targetCount = () => {}
  * @param {number|string} target
  * @returns {number} first index found.
  */
+
 const firstIndexFound = () => {}
 /**
  * Takes in an array and a target.
@@ -289,6 +312,7 @@ const firstIndexFound = () => {}
  * @param {number|string} target
  * @returns {number} last index found.
  */
+
 const lastIndexFound = () => {}
 
 /**
@@ -298,6 +322,7 @@ const lastIndexFound = () => {}
  * @param {number[]} elements
  * @returns {number[]}
  */
+
 const timesIndex = () => {}
 
 
@@ -310,6 +335,7 @@ const timesIndex = () => {}
  * @param {number[]} elements
  * @returns {number[]}
  */
+
 const cumulativeSum = () => {}
 
 
