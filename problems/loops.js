@@ -34,7 +34,15 @@ function oneTillDoneForLoop(num) {
  * @param {number}
  * @returns {number[]}
  */
-function doneToZeroWhileLoop() {}
+function doneToZeroWhileLoop(num) {
+  const arr = [];
+  let i = num;
+  while (i > 0) {
+    arr.push(i)
+    i--
+  }
+  return arr
+}
 
 /**
  * Takes in a number and returns an array filled with all numbers from number to 0 (exclusive)
