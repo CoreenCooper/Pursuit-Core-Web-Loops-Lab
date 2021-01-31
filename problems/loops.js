@@ -193,8 +193,17 @@ const endsWithFiveForLoop = () => {
 }
 // Try refactoring the code above to increment your i by 10 and starting at 5.
 
+// const endsWithFiveForLoop = () => {
+//   const arr = [];
+//   for (let i = 5; i <= 100; i += 5) {
+//     if (i % 10 === 5) {
+//       arr.push(i)
+//     }
+//   }
+//   return arr
+// }
 
-
+// console.log(endsWithFiveForLoop())
 /**
  Without running/executing your code, how many times will the loop below run?
   Explain why.
@@ -209,7 +218,7 @@ while (i > 3) {
 
 /**
  * // Write your explanation here!
- *
+ * It would be an infinite loop because i will allows be greater than 3
  */
 
  /**
@@ -221,7 +230,19 @@ while (i > 3) {
 
  */
 
-const fizzBuzzPart1 = () => {}
+const fizzBuzzPart1 = () => {
+  const arr = [];
+  for (let i = 1; i <= 100; i++) {
+    if (i % 3 === 0) {
+      arr.push(`Fizz`)
+    } else if (i % 5 === 0 && i % 3 !== 0) {
+      arr.push(`Buzz`) 
+    } else {
+      arr.push(i)
+    }
+  }
+  return arr
+}
 
 
  /**
