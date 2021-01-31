@@ -356,7 +356,14 @@ const containsWhileLoop = (el, target) => {
  * @returns {boolean} true if the array contains our target, otherwise false
  */
 
-const containsForLoop = () => {}
+const containsForLoop = (el, target) => {
+  for (let i = 0; i < el.length; i++) {
+    if (el[i] === target) {
+      return true
+    }
+  }
+  return false
+}
 /**
  * Takes in an array and a target.
  * Determines how many times the target exists in the array
