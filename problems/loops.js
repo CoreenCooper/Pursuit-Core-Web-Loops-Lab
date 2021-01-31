@@ -182,7 +182,15 @@ const endsWithFiveWhileLoop = () => {
 
  */
 
-const endsWithFiveForLoop = () => {}
+const endsWithFiveForLoop = () => {
+  const arr = [];
+  for (let i = 1; i <= 100; i++) {
+    if (i % 10 === 5) {
+      arr.push(i)
+    }
+  }
+  return arr
+}
 // Try refactoring the code above to increment your i by 10 and starting at 5.
 
 
