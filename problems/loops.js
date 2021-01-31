@@ -317,7 +317,13 @@ const rangeOdd = (min, max) => {
  * @returns {number[]} includes every other element
  */
 
-const rangeEveryOther = () => {}
+const rangeEveryOther = (min, max) => {
+  const arr = [];
+  for (let i = min; i <= max; i += 2) {
+    arr.push(i)
+  }
+  return arr
+}
 
 /**
  * Takes in an array and a target.
