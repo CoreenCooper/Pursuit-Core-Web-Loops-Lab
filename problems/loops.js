@@ -50,7 +50,13 @@ function doneToZeroWhileLoop(num) {
  * @param {number}
  * @returns {number[]}
  */
-function doneToZeroForLoop() {}
+function doneToZeroForLoop(num) {
+  let arr = [];
+  for (let i = num; i > num; i--) {
+    arr.push(i);
+  }
+  return arr
+}
 
 /**
  * Takes in the variable "max", and iterates over all numbers from 0 to "max".
