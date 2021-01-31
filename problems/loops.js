@@ -372,7 +372,15 @@ const containsForLoop = (el, target) => {
  * @returns {number} number of occurances
  */
 
-const targetCount = () => {}
+const targetCount = (el, target) => {
+  let occurances = 0;
+  for (let i = 0; i <= el.length; i++) {
+    if (el[i] === target) {
+      occurances++
+    }
+  }
+  return occurances
+}
 /**
  * Takes in an array and a target.
  * Determines the first index that the target is found at.
