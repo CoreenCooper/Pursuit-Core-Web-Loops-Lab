@@ -52,7 +52,7 @@ function doneToZeroWhileLoop(num) {
  */
 function doneToZeroForLoop(num) {
   let arr = [];
-  for (let i = num; i > num; i--) {
+  for (let i = num; i > 0; i--) {
     arr.push(i);
   }
   return arr
@@ -67,7 +67,18 @@ function doneToZeroForLoop(num) {
  * @param {number} max number
  * @returns {string[]} ["0 is even", "1 is odd", "2 is even", "3 is odd"] if max was 3
  */
-function evenAndOddWhileLoop() {}
+function evenAndOddWhileLoop(max) {
+  let arr = [];
+  let i = 0;
+  while (i < max) {
+    if (i % 2 === 0) {
+      arr.push(`${i} is even`)
+    } else {
+      arr.push(`${i} is odd`)
+    }
+    i++
+  }
+}
 
 /**
  * Takes in the variable "max", and iterates over all numbers from 0 to "max".
