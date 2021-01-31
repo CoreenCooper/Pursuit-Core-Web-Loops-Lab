@@ -255,7 +255,23 @@ const fizzBuzzPart1 = () => {
 
  */
 
-const fizzBuzzPart2 = () => {}
+ /* if statement will check the for true value form top to bottom
+ with line 262 first other else statement don't need an and statement */
+const fizzBuzzPart2 = () => {
+  const arr = [];
+  for (let i = 1; i <= 100; i++) {
+    if  (i % 3 === 0 && i % 5 === 0){
+      arr.push("FizzBuzz")
+    } else if (i % 5 === 0) {
+      arr.push("Buzz")
+    } else if  (i % 3 === 0) {
+      arr.push("Fizz")
+    } else {
+      arr.push(i)
+    }
+  }
+  return arr
+}
 
 /**
  * Takes in range (inclusive) and returns the sum of all numbers in that range.
