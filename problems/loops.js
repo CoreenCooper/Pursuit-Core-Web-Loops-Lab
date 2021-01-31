@@ -430,7 +430,14 @@ const lastIndexFound = (el, target) => {
  * @returns {number[]}
  */
 
-const timesIndex = () => {}
+ // write with array method
+const timesIndex = (el) => {
+  const newArr = [];
+  for (let i = 0; i < el.length; i++) {
+    newArr.push(el[i] * i)
+  }
+  return newArr
+}
 
 
 /**
