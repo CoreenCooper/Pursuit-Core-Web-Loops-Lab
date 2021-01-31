@@ -264,7 +264,7 @@ const fizzBuzzPart2 = () => {
       arr.push("FizzBuzz")
     } else if (i % 5 === 0) {
       arr.push("Buzz")
-    } else if  (i % 3 === 0) {
+    } else if (i % 3 === 0) {
       arr.push("Fizz")
     } else {
       arr.push(i)
@@ -281,7 +281,13 @@ const fizzBuzzPart2 = () => {
  * @returns {number} sum all all numbers from min to max
  */
 
-const rangeSum = () => {}
+const rangeSum = (min, max) => {
+  let sum = 0;
+  for (let i = min; i <= max; i++) {
+    sum += i
+  }
+  return sum
+}
 
 /**
  * Takes in range (inclusive) and returns an array in decreasing order of all odd numbers
