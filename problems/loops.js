@@ -391,7 +391,15 @@ const targetCount = (el, target) => {
  * @returns {number} first index found.
  */
 
-const firstIndexFound = () => {}
+const firstIndexFound = (el, target ) => {
+  let targetFoundAtIdx = 0;
+  for (let i = 0; i < el.length; i++) {
+    if (el[i] === target) {
+    return i
+    }
+  } 
+  return -1 
+}
 /**
  * Takes in an array and a target.
  * Determines the last index that the target is found at.
