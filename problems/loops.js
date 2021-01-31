@@ -364,6 +364,7 @@ const containsForLoop = (el, target) => {
   }
   return false
 }
+
 /**
  * Takes in an array and a target.
  * Determines how many times the target exists in the array
@@ -381,6 +382,7 @@ const targetCount = (el, target) => {
   }
   return occurances
 }
+
 /**
  * Takes in an array and a target.
  * Determines the first index that the target is found at.
@@ -400,6 +402,7 @@ const firstIndexFound = (el, target ) => {
   } 
   return -1 
 }
+
 /**
  * Takes in an array and a target.
  * Determines the last index that the target is found at.
@@ -410,7 +413,14 @@ const firstIndexFound = (el, target ) => {
  * @returns {number} last index found.
  */
 
-const lastIndexFound = () => {}
+const lastIndexFound = (el, target) => {
+  for (i = el.length -1; i > 0; i--) {
+    if (el[i] === target) {
+      return i
+    }
+  }
+  return -1
+}
 
 /**
  * Takes in an array.
