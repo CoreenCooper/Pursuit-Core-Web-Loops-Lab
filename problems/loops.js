@@ -430,14 +430,15 @@ const lastIndexFound = (el, target) => {
  * @returns {number[]}
  */
 
- // write with array method
-const timesIndex = (el) => {
-  const newArr = [];
-  for (let i = 0; i < el.length; i++) {
-    newArr.push(el[i] * i)
-  }
-  return newArr
-}
+ const timesIndex = el => el.map((el, i) => el * i);
+
+// const timesIndex = (el) => {
+//   const newArr = [];
+//   for (let i = 0; i < el.length; i++) {
+//     newArr.push(el[i] * i)
+//   }
+//   return newArr
+// }
 
 
 /**
@@ -450,9 +451,23 @@ const timesIndex = (el) => {
  * @returns {number[]}
  */
 
-const cumulativeSum = () => {}
+//*** revisit ***/
+const cumulativeSum = arr => {
+  let sum = 0;
+  return arr.map(el => { 
+    return sum += el
+  });
+}
 
 
+// const cumulativeSum = arr => {
+//   let sum = 0;
+//   const newArr = [];
+//   for (let i = 0; i < arr.length; i++) {
+//     newArr.push(sum += arr[i])
+//   }
+//   return newArr;
+// }
 
 module.exports = {
   oneTillDoneWhileLoop,

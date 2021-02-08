@@ -18,7 +18,8 @@ Take one down, pass it around, No more bottle of beer on the wall.
  * @return {string[]}
  */
 
-function ninetyNineBottlesOfBeerOnTheWall() {}
+const ninetyNineBottlesOfBeerOnTheWall = () => {
+}
 
 /**
   * Given an integer N draw a square of N x N asterisks. Look at the examples.
@@ -41,7 +42,9 @@ Output:
     ***
 ]
   */
-function drawSquare() {}
+const drawSquare = () => {
+  
+}
 /**
   * If we list all the natural numbers below 10 that are multiples of 3 or 5,
   *  we get 3, 5, 6 and 9. The sum of these multiples is 23.
@@ -49,7 +52,9 @@ function drawSquare() {}
   *  @returns {number}
   */
 
-function multiplesOf3And5Sum() {}
+const multiplesOf3And5Sum = () => {
+  
+}
 
 module.exports = {
   ninetyNineBottlesOfBeerOnTheWall,
