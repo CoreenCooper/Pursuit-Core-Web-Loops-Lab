@@ -19,8 +19,18 @@ Take one down, pass it around, No more bottle of beer on the wall.
  */
 
 const ninetyNineBottlesOfBeerOnTheWall = () => {
+  let song = [];
+  for (let i = 99; i >= 1; i--) {
+    if (i > 2) {
+      song.push(`${i} bottles of beer on the wall, ${i} bottles of beer. Take one down, pass it around, ${i - 1} bottles of beer on the wall.`)
+    } else if (i === 2) {
+      song.push(`${i} bottles of beer on the wall, ${i} bottles of beer. Take one down, pass it around, ${i - 1} bottle of beer on the wall.`)
+    } else {
+      song.push(`${i} bottle of beer on the wall, ${i} bottle of beer. Take one down, pass it around, No more bottle of beer on the wall.`)
+    }
+  }
+  return song
 }
-
 /**
   * Given an integer N draw a square of N x N asterisks. Look at the examples.
 * @param {number} N
